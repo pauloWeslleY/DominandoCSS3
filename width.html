@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Curso Dominando CSS3</title>
+		<style type="text/css">
+			body {
+				margin: 50px;
+				padding: 0;
+			}
+			.background__hero {
+				width: 100vw;
+				height: 100vh;
+			}
+			.background__hero > div[class^='width'] {
+				border-style: solid;
+				border-width: 2px;
+				margin-bottom: 2%;
+				height: 40px;
+				overflow: hidden;
+			}
+			.width__auto_hero {
+				width: auto;
+				border-color: #d90429aa;
+			}
+			.width__vwvh_hero {
+				width: 50vw;
+				border-color: #023047aa;
+			}
+			.width__percent_hero {
+				width: 50%;
+				border-color: #219ebcaa;
+			}
+			.width__pixel_hero {
+				width: 350px;
+				border-color: #588157aa;
+			}
+			.width__fit_hero {
+				width: fit-content;
+				border-color: #e36414aa;
+			}
+			.width__max_hero {
+				width: max-content;
+				border-color: #001219aa;
+			}
+			.width__min_hero {
+				width: min-content;
+				border-color: #6a040faa;
+			}
+			.width__revert_hero {
+				width: revert;
+				border-color: #6a040faa;
+			}
+			.width__unset_hero {
+				width: unset;
+				border-color: #6a040faa;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="background__hero">
+			<div class="width__auto_hero">
+				AUTO: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia dolorum
+				officia soluta temporibus ducimus ea eos, repellat at minima. Ipsum ratione provident
+				consectetur doloribus, dolores quibusdam quo laboriosam repellendus.
+			</div>
+			<div class="width__vwvh_hero">
+				VWVH: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia dolorum
+				officia soluta temporibus ducimus ea eos, repellat at minima.
+			</div>
+			<div class="width__percent_hero">
+				PERCENT: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia dolorum
+				officia soluta temporibus ducimus ea eos, repellat at minima.
+			</div>
+			<div class="width__pixel_hero">
+				PIXEL: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</div>
+			<div class="width__fit_hero">
+				FIT-CONTENT: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</div>
+			<div class="width__max_hero">
+				MAX-CONTENT: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</div>
+			<div class="width__min_hero">
+				MIN-CONTENT: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</div>
+			<div class="width__revert_hero">
+				REVERT: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</div>
+			<div class="width__unset_hero">
+				UNSET: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</div>
+		</div>
+	</body>
+</html>
