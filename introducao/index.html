@@ -11,18 +11,24 @@
 				padding: 0;
 				height: 100vh;
 				display: flex;
-				align-items: flex-end;
-				justify-content: space-around;
 			}
 			.container {
 				width: 20vw;
-				height: 50vh;
-				background-color: #073b4c;
-				margin-bottom: 10%;
+				height: 20vw;
+				background-color: #6a040f;
+			}
+			.container:nth-child(3) {
+				/* margin-left: unset; */
+				/* margin-left: 0; */
+				/* margin-left: initial; */
+			}
+			.container + .container {
+				margin-left: 2vw;
 			}
 		</style>
 	</head>
 	<body>
+		<div class="container"></div>
 		<div class="container"></div>
 		<div class="container"></div>
 	</body>
