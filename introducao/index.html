@@ -11,28 +11,39 @@
 			}
 			body {
 				margin: 0;
-				width: 100vw;
-				height: 100vh;
-				background-color: #4a4e69aa;
+				padding: 0;
+				background-color: #edf2f4;
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				height: 100vh;
 			}
-			#card {
-				width: 500px;
-				height: 500px;
-				background-color: #a8dadc;
-				border-color: #1d3557;
-				border-width: 2.5em;
-				border-style: inset;
-				border-bottom-right-radius: 50% 10%;
-				border-bottom-left-radius: 50% 10%;
-				border-top-right-radius: 50% 10%;
-				border-top-left-radius: 50% 10%;
+			.heart {
+				position: relative;
+				width: 100px;
+				height: 90px;
+			}
+			.heart:before,
+			.heart:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 50px;
+				width: 50px;
+				height: 80px;
+				background-color: #d90429;
+				border-radius: 50px 50px 0 0;
+				transform: rotate(-45deg);
+				transform-origin: 0 100%;
+			}
+			.heart:after {
+				left: 0;
+				transform: rotate(45deg);
+				transform-origin: 100% 100%;
 			}
 		</style>
 	</head>
 	<body>
-		<div id="card"></div>
+		<div class="heart"></div>
 	</body>
 </html>
