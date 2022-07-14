@@ -18,16 +18,48 @@
 				justify-content: center;
 				height: 100vh;
 			}
-			div {
-				width: 500px;
-				height: 500px;
-				background-color: #2b2d42;
-				border: transparent 1px solid;
-				border-image: url('./border-image-source.png') 100 / 50 / 100 round;
+			table {
+				border: solid 1px #f14;
+				width: 70vw;
+				border-collapse: collapse;
+				/* border-collapse: separate; */
+			}
+			td,
+			th {
+				border: solid 1px #001219;
 			}
 		</style>
 	</head>
 	<body>
-		<div></div>
+		<table>
+			<thead>
+				<tr>
+					<th>Name:</th>
+					<th>Email:</th>
+					<th>Cellphone:</th>
+					<th>Office:</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Harrison Wells</td>
+					<td>harrison@star.com</td>
+					<td>1194654321</td>
+					<td>Doctor</td>
+				</tr>
+				<tr>
+					<td>Barry Allen</td>
+					<td>barry@ccpd.com</td>
+					<td>1184654324</td>
+					<td>Forensic Scientist</td>
+				</tr>
+				<tr>
+					<td>Caitlyn Snow</td>
+					<td>cat@mercury.com</td>
+					<td>1154674832</td>
+					<td>Doctor</td>
+				</tr>
+			</tbody>
+		</table>
 	</body>
 </html>
