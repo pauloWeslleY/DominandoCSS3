@@ -6,20 +6,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Curso Dominando CSS3</title>
 		<style type="text/css">
+			* {
+				box-sizing: border-box;
+			}
 			.container {
-				width: 600px;
-				height: 600px;
+				width: min-content;
+				max-width: 150px;
 				border: #14213d solid 5px;
-				overflow: hidden scroll;
+				overflow-wrap: anywhere;
+			}
+			.destach {
+				color: #d90429;
+				font-weight: 700;
+				font-size: 1.3rem;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
-			<img
-				src="https://images.unsplash.com/photo-1662368298353-9bbb868acdd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=731&q=80"
-				alt="Image Food"
-			/>
+			Magna tempor ipsum sanctus dolores ut ea, sed
+			<span class="destach">conseteturgrogyhnreoaghrg</span> ipsum diam erat at aliquyam et no.
+			Amet consetetur elitr et accusam amet, accusam clita diam diam diam lorem consetetur no,
+			labore gubergren accusam sea voluptua, lorem aliquyam eos clita kasd sea. At erat et nonumy
+			dolore lorem no et et.
 		</div>
 	</body>
 </html>
