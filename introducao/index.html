@@ -6,20 +6,42 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Curso Dominando CSS3</title>
 		<style type="text/css">
-			.container {
-				width: 600px;
-				height: 600px;
-				border: #14213d solid 5px;
-				overflow-block: auto;
+			body {
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.content {
+				width: 50vw;
+			}
+			.item {
+				resize: both;
+				overflow: auto;
+			}
+			p:nth-child(2) {
+				resize: inline;
+			}
+			textarea {
+				resize: vertical;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="container">
-			<img
-				src="https://images.unsplash.com/photo-1662377088176-310d11be8be1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-				alt="Image City"
-			/>
+		<div class="content">
+			<p class="item">
+				Dolore clita erat voluptua et ut rebum dolor erat erat at. Clita ea sit lorem amet at
+				elitr dolores invidunt..
+			</p>
+			<p class="item">
+				Dolore clita erat voluptua et ut rebum dolor erat erat at. Clita ea sit lorem amet at
+				elitr dolores invidunt..
+			</p>
 		</div>
+
+		<form>
+			<textarea></textarea>
+		</form>
 	</body>
 </html>
