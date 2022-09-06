@@ -6,27 +6,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Curso Dominando CSS3</title>
 		<style type="text/css">
-			div {
+			.container {
 				width: 300px;
-				height: 300px;
-				padding: 100px;
-				background-color: #2b2d42;
-				border: #d90429 solid 5px;
-				display: inline-block;
-				margin: 15px;
-				color: #edf2f4;
+				display: flex;
+				height: 200px;
+				border: #003049 5px solid;
+				overflow-x: scroll;
 			}
-			.box {
-				box-sizing: border-box;
-				width: 300px;
-				height: 300px;
-				padding: 100px;
-				background-color: #14213d;
+			.item {
+				padding: 50px;
+				margin-right: 20px;
+				border: #d62828 5px outset;
 			}
 		</style>
 	</head>
 	<body>
-		<div>Hcode!!!</div>
-		<div class="box">Rocketseat!!!</div>
+		<div class="container">
+			<div class="item">Curso Completo CSS3</div>
+			<div class="item">Curso HTML5</div>
+			<div class="item">Curso JS</div>
+			<div class="item">Curso TS</div>
+			<div class="item">Curso PHP8</div>
+		</div>
 	</body>
 </html>
