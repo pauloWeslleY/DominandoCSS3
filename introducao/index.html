@@ -6,42 +6,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Curso Dominando CSS3</title>
 		<style type="text/css">
-			body {
-				margin: 0;
-				padding: 0;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
+			div {
+				width: 250px;
+				height: 250px;
 			}
-			.content {
-				width: 50vw;
+
+			.bg {
+				background-color: rebeccapurple;
+				position: absolute;
+				z-index: 1;
 			}
-			.item {
-				resize: both;
-				overflow: auto;
-			}
-			p:nth-child(2) {
-				resize: inline;
-			}
-			textarea {
-				resize: vertical;
+
+			.detach {
+				background-color: royalblue;
+				position: absolute;
+				left: 100px;
+				top: 50px;
+
+				z-index: 0;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="content">
-			<p class="item">
-				Dolore clita erat voluptua et ut rebum dolor erat erat at. Clita ea sit lorem amet at
-				elitr dolores invidunt..
-			</p>
-			<p class="item">
-				Dolore clita erat voluptua et ut rebum dolor erat erat at. Clita ea sit lorem amet at
-				elitr dolores invidunt..
-			</p>
-		</div>
-
-		<form>
-			<textarea></textarea>
-		</form>
+		<div class="bg"></div>
+		<div class="detach"></div>
 	</body>
 </html>
