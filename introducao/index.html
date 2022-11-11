@@ -6,29 +6,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Curso Dominando CSS3</title>
 		<style type="text/css">
+			body {
+				background-color: #6699cc;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				height: 100vh;
+			}
+
 			div {
-				width: 250px;
-				height: 250px;
-			}
+				box-sizing: border-box;
 
-			.bg {
-				background-color: rebeccapurple;
-				position: absolute;
-				z-index: 1;
-			}
+				width: 300px;
+				height: 300px;
+				background-color: mediumvioletred;
 
-			.detach {
-				background-color: royalblue;
-				position: absolute;
-				left: 100px;
-				top: 50px;
+				border: #ccc 15px dashed;
 
-				z-index: 0;
+				outline-style: double;
+				outline-width: 20px;
+				color: #000;
+
+				margin: 20px;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="bg"></div>
-		<div class="detach"></div>
+		<div></div>
 	</body>
 </html>
