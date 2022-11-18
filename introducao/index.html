@@ -8,31 +8,53 @@
 		<style type="text/css">
 			body {
 				font-family: Arial, Helvetica, sans-serif;
-				background-color: #f1faee;
+				background-color: #a8dadc;
 
-				display: grid;
-				justify-items: center;
+				margin: 0;
+				height: 100vh;
+
+				display: flex;
+				align-items: center;
 			}
 
-			div {
-				margin: 10px;
-				height: 200px;
-				width: 200px;
-				background-color: #e63946;
+			.container {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+
+				margin: 2% auto;
+				width: 80%;
+				height: 90vh;
+				box-shadow: 0 0 0 10px rgba(241, 250, 238, 0.2);
 			}
 
-			div:nth-child(3) {
-				justify-self: start;
+			.container > div {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-basis: 200px;
+
+				transition: all 0.2s ease-in-out;
+
+				height: 150px;
+				border: solid 0.5px;
+
+				cursor: pointer;
 			}
 
-			div:nth-child(4) {
-				justify-self: end;
+			.container > div:hover {
+				flex-basis: 250px;
+				border-color: #e63946;
 			}
 		</style>
 	</head>
 	<body>
-		<div></div>
-		<div></div>
-		<div></div>
+		<div class="container">
+			<div class="a">a</div>
+			<div class="b">b</div>
+			<div class="c">c</div>
+			<div class="d">d</div>
+		</div>
 	</body>
 </html>
