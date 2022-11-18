@@ -13,25 +13,21 @@
 				margin: 0;
 			}
 
-			.container__flex {
-				display: flex;
-				align-items: baseline;
-
-				width: 100vw;
-				height: 100vh;
-			}
-
 			.container {
-				display: grid;
-				align-items: stretch;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				flex-wrap: wrap;
+
+				align-content: center;
 
 				width: 100vw;
 				height: 100vh;
-				background-color: #1d3557;
 			}
 
 			.container > div {
 				width: 100px;
+				height: 400px;
 				background-color: #e63946;
 				margin: 10px;
 			}
@@ -39,11 +35,11 @@
 	</head>
 	<body>
 		<div class="container">
-			<div style="font-size: 1.5rem">A</div>
-			<div style="font-size: 3rem">B</div>
-			<div style="font-size: 5rem">C</div>
-			<div style="font-size: 0.5rem">D</div>
-			<div style="font-size: 7rem">E</div>
+			<div>A</div>
+			<div>B</div>
+			<div>C</div>
+			<div>D</div>
+			<div>E</div>
 		</div>
 	</body>
 </html>
