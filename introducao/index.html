@@ -4,54 +4,46 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Curso Dominando CSS3</title>
+		<title>Dominando CSS3</title>
 		<style type="text/css">
 			body {
 				font-family: Arial, Helvetica, sans-serif;
-
 				background-color: #a8dadc;
+
+				margin: 0;
+			}
+
+			.container__flex {
+				display: flex;
+				align-items: baseline;
+
+				width: 100vw;
+				height: 100vh;
 			}
 
 			.container {
-				display: flex;
-				flex-flow: column wrap;
-				justify-content: space-evenly;
+				display: grid;
+				align-items: stretch;
 
-				box-shadow: 0 0 10px rgba(100, 100, 100, 0.2);
-
-				width: 90%;
-				height: 90vh;
+				width: 100vw;
+				height: 100vh;
+				background-color: #1d3557;
 			}
 
 			.container > div {
 				width: 100px;
-				height: 100px;
-
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				margin: 1px;
-
-				border-width: 0.2rem;
-				border-style: solid;
-
-				transition: all 0.5s ease;
-				cursor: pointer;
-			}
-
-			.container > div:hover {
-				color: #e63946;
-
-				font-weight: bold;
+				background-color: #e63946;
+				margin: 10px;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
-			<div class="hero_a">A</div>
-			<div class="hero_b">B</div>
-			<div class="hero_c">C</div>
+			<div style="font-size: 1.5rem">A</div>
+			<div style="font-size: 3rem">B</div>
+			<div style="font-size: 5rem">C</div>
+			<div style="font-size: 0.5rem">D</div>
+			<div style="font-size: 7rem">E</div>
 		</div>
 	</body>
 </html>
