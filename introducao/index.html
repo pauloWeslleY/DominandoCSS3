@@ -33,7 +33,6 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				flex-basis: 200px;
 
 				transition: all 0.2s ease-in-out;
 
@@ -44,8 +43,14 @@
 			}
 
 			.container > div:hover {
-				flex-basis: 250px;
 				border-color: #e63946;
+			}
+
+			.container > div.a {
+				flex-grow: 3;
+			}
+			.container > div.c {
+				flex-grow: 2;
 			}
 		</style>
 	</head>
