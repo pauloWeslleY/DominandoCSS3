@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,21 +11,20 @@
 				background-color: #a8dadc;
 
 				margin: 0;
+				padding: 0;
 				height: 100vh;
-
 				display: flex;
 				align-items: center;
 			}
 
 			.container {
 				display: flex;
-				flex-wrap: wrap;
 				align-items: center;
 				justify-content: center;
 
-				margin: 2% auto;
-				width: 80%;
-				height: 90vh;
+				margin: 20% auto;
+				width: 15%;
+				height: 50vh;
 				box-shadow: 0 0 0 10px rgba(241, 250, 238, 0.2);
 			}
 
@@ -34,12 +33,15 @@
 				align-items: center;
 				justify-content: center;
 
-				transition: all 0.2s ease-in-out;
+				flex-grow: 1;
+				flex-shrink: 1;
+				flex-basis: 100px;
 
 				height: 150px;
 				border: solid 0.5px;
 
 				cursor: pointer;
+				transition: all 0.2s ease-in-out;
 			}
 
 			.container > div:hover {
@@ -47,10 +49,13 @@
 			}
 
 			.container > div.a {
-				flex-grow: 3;
+				flex-shrink: 3;
+			}
+			.container > div.b {
 			}
 			.container > div.c {
-				flex-grow: 2;
+			}
+			.container > div.d {
 			}
 		</style>
 	</head>
