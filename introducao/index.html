@@ -21,9 +21,10 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				flex-direction: row-reverse;
 
 				margin: 20% auto;
-				width: 15%;
+				width: 90%;
 				height: 50vh;
 				box-shadow: 0 0 0 10px rgba(241, 250, 238, 0.2);
 			}
@@ -33,13 +34,12 @@
 				align-items: center;
 				justify-content: center;
 
-				flex: 1 1 100px;
-
 				height: 150px;
 				border: solid 0.5px;
 
 				cursor: pointer;
 				transition: all 0.2s ease-in-out;
+				flex-basis: 100px;
 			}
 
 			.container > div:hover {
@@ -47,13 +47,16 @@
 			}
 
 			.container > div.a {
-				flex-shrink: 3;
+				order: 0;
 			}
 			.container > div.b {
+				order: -2;
 			}
 			.container > div.c {
+				order: 2;
 			}
 			.container > div.d {
+				order: 3;
 			}
 		</style>
 	</head>
