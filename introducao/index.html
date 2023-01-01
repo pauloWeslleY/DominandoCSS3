@@ -6,61 +6,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Dominando CSS3</title>
 		<style type="text/css">
-			#dado {
-				width: 150px;
-				height: 150px;
-				margin: 100px;
-				transform: rotate3d(1, 1, 1, 45deg);
-				transform-style: preserve-3d;
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				margin: 0;
 			}
-			#dado > div {
-				background-image: url('https://w7.pngwing.com/pngs/245/247/png-transparent-dice-yahtzee-d20-system-cube-dice-angle-white-text.png');
-
-				/* border: 1px solid #e63946; */
-
-				background-size: 510px;
-
-				width: 100%;
-				height: 100%;
-
-				opacity: 0.9;
-				position: absolute;
+			svg {
+				margin: 10%;
+				border: solid 1px #1d3557;
 			}
-
-			#um {
-				background-position: -14px -10px;
-				transform: translateZ(75px);
+			#box {
+				transform-box: fill-box;
+				transform-origin: center;
+				animation: spin 4s linear infinite;
 			}
-			#dois {
-				background-position: -178px -10px;
-				transform: rotateX(-90deg) translateZ(75px);
-			}
-			#tres {
-				background-position: -351px -10px;
-				transform: rotateY(90deg) translateZ(-75px);
-			}
-			#quatro {
-				background-position: -10px -204px;
-				transform: rotateX(-90deg) translateZ(-75px);
-			}
-			#cinco {
-				background-position: -178px -204px;
-				transform: translateZ(-75px);
-			}
-			#seis {
-				background-position: -351px -204px;
-				transform: rotateY(90deg) translateZ(75px);
+			@keyframes spin {
+				to {
+					transform: rotate(360deg);
+				}
 			}
 		</style>
 	</head>
 	<body>
-		<div id="dado">
-			<div id="um"></div>
-			<div id="dois"></div>
-			<div id="tres"></div>
-			<div id="quatro"></div>
-			<div id="cinco"></div>
-			<div id="seis"></div>
-		</div>
+		<svg viewBox="0 0 100 100">
+			<rect id="box" width="20" height="20" x="20" y="20" stroke="purple" fill="none" />
+			<circle fill="orange" r="2" transform="translate(50 50)" />
+			<circle fill="gray" r="2" transform="translate(30 30)" />
+		</svg>
 	</body>
 </html>
