@@ -3,6 +3,10 @@ $orange_hcode_light: rgba($orange_hcode, 0.33);
 $background_color: #082032;
 $primary: #2c394b;
 
+:root {
+	--orange-hcode: #ff4c29;
+}
+
 body {
 	font-family: sans-serif;
 	margin: 0;
@@ -13,12 +17,21 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: $orange_hcode;
+		background-color: var(--orange-hcode);
+		// background-color: $orange_hcode;
+		$orange_hcode: #334756;
 		height: 100px;
+
+		// --orange-hcode: #ff4c29;
 
 		h1 {
 			margin: 0;
 			color: $primary;
+		}
+		h2 {
+			background-color: #fff;
+			color: $orange_hcode;
+			padding: 20px;
 		}
 	}
 
