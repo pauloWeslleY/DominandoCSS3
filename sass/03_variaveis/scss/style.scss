@@ -1,0 +1,29 @@
+$orange_hcode: #ff4c29;
+$orange_hcode_light: rgba($orange_hcode, 0.33);
+$background_color: #082032;
+$primary: #2c394b;
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+
+	background-color: $background_color;
+
+	header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $orange_hcode;
+		height: 100px;
+
+		h1 {
+			margin: 0;
+			color: $primary;
+		}
+	}
+
+	section {
+		background-color: $orange_hcode_light;
+		height: calc(100vh - 200px);
+	}
+}
