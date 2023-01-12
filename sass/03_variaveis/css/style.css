@@ -2,88 +2,79 @@
   box-sizing: border-box;
 }
 
-a {
-  color: #cd0404;
-  text-decoration: none;
-}
-a:hover {
-  color: #ff0032;
-}
-
-.button {
-  background: #ff0032;
-  color: #f3efe0;
-  padding: 8px 32px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 25px;
-}
-.button:hover {
-  background-color: rgba(255, 0, 50, 0.8);
-}
-
-#logo {
-  color: #ff0032;
-  font-weight: bold;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
 body {
   margin: 0;
   font-family: sans-serif;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 64px;
-  padding: 0 16px;
-}
-header nav {
-  width: 400px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 5px;
-}
-
-main {
-  margin: 15vw;
-  padding-right: 320px;
-  background-image: url("https://i.picsum.photos/id/818/200/300.jpg?hmac=lE_Le7TxnELgojCX97DVlE9CLlZJWqnfbaQR3Chjstw");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: 300px;
-  min-height: 400px;
-}
-main h1 {
-  font-weight: bold;
-  font-size: 48px;
-}
-main h1 span {
   color: #ff0032;
 }
-main h1 small {
-  display: block;
-  font-weight: 100;
-  font-size: 24px;
-}
-main p {
-  margin-bottom: 60px;
-}
-main .button {
-  padding: 16px 64px;
-}
 
-footer {
+#chat {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 64px;
+  flex-direction: column;
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+}
+#chat li {
+  display: flex;
+  margin-bottom: 32px;
+}
+#chat li .avatar {
+  padding: 0 16px;
+  display: flex;
+  align-items: flex-end;
+}
+#chat li .avatar img {
+  border-radius: 50%;
+  width: 48px;
+}
+#chat li .message {
+  flex: 1;
+  background-color: #fef5ed;
+  padding: 16px;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+}
+#chat li .message strong {
+  color: #ff4c29;
+}
+#chat li .message p {
+  font-size: 14px;
+}
+#chat li .message time {
   font-size: 12px;
-  color: #f3efe0;
+  letter-spacing: 1px;
+  opacity: 0.65;
+}
+#chat li .menu {
+  display: flex;
+  align-items: center;
+}
+#chat li .menu button {
+  border: none;
+  background: none;
+  outline: none;
+}
+#chat li .menu button img {
+  width: 16px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#chat li.me {
+  color: #f7f7e8;
+  flex-direction: row-reverse;
+}
+#chat li.me .message {
+  background-color: #00af9c;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 0;
+}
+#chat li.me .message ::selection {
+  background: #fff;
+  color: #ff0032;
+}
+#chat li.me strong {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

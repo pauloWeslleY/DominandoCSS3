@@ -1,4 +1,98 @@
-@use "theme" with (
-	$primary: #ff0032,
-	$border-radius: 25px
-);
+$color_primary: #ff0032;
+$color_secondary: #00af9c;
+$color_third: #f7f7e8;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	color: $color_primary;
+}
+
+#chat {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	padding: 0;
+	list-style: none;
+
+	li {
+		display: flex;
+		margin-bottom: 32px;
+		$bg: #fef5ed;
+
+		.avatar {
+			padding: 0 16px;
+			display: flex;
+			align-items: flex-end;
+
+			img {
+				border-radius: 50%;
+				width: 48px;
+			}
+		}
+
+		.message {
+			flex: 1;
+			background-color: $bg;
+			padding: 16px;
+			border-radius: 8px;
+			border-bottom-left-radius: 0;
+
+			strong {
+				color: #ff4c29;
+			}
+
+			p {
+				font-size: 14px;
+			}
+
+			time {
+				font-size: 12px;
+				letter-spacing: 1px;
+				opacity: 0.65;
+			}
+		}
+
+		.menu {
+			display: flex;
+			align-items: center;
+
+			button {
+				border: none;
+				background: none;
+				outline: none;
+
+				img {
+					width: 16px;
+					opacity: 0.5;
+					cursor: pointer;
+				}
+			}
+		}
+
+		&.me {
+			$bg: $color_secondary;
+			color: $color_third;
+			flex-direction: row-reverse;
+
+			.message {
+				background-color: $bg;
+				border-bottom-left-radius: 8px;
+				border-bottom-right-radius: 0;
+
+				::selection {
+					background: #fff;
+					color: $color_primary;
+				}
+			}
+
+			strong {
+				display: none;
+			}
+		}
+	}
+}
