@@ -1,0 +1,9 @@
+$rounded: 10px;
+
+@mixin roundedBolt {
+	border-radius: $rounded;
+}
+
+@mixin circle {
+	border-radius: 50%;
+}
