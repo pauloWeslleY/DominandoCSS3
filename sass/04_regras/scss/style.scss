@@ -1,8 +1,6 @@
-@use "radius";
-
-$color_primary: #ff0032;
-$color_secondary: #00af9c;
-$color_third: #f7f7e8;
+@use "global" with (
+	$color_primary: #6f1ab6
+);
 
 * {
 	box-sizing: border-box;
@@ -11,7 +9,7 @@ $color_third: #f7f7e8;
 body {
 	margin: 0;
 	font-family: sans-serif;
-	color: $color_primary;
+	color: global.$color_primary;
 }
 
 #chat {
@@ -32,7 +30,7 @@ body {
 			align-items: flex-end;
 
 			img {
-				@include radius.circle;
+				@include global.circle;
 				width: 48px;
 			}
 		}
@@ -41,7 +39,7 @@ body {
 			flex: 1;
 			background-color: $bg;
 			padding: 16px;
-			@include radius.roundedBolt;
+			@include global.roundedBolt;
 			border-bottom-left-radius: 0;
 
 			strong {
@@ -77,18 +75,18 @@ body {
 		}
 
 		&.me {
-			$bg: $color_secondary;
-			color: $color_third;
+			$bg: global.$color_secondary;
+			color: global.$color_third;
 			flex-direction: row-reverse;
 
 			.message {
 				background-color: $bg;
-				border-bottom-left-radius: radius.$rounded;
+				border-bottom-left-radius: global.$rounded;
 				border-bottom-right-radius: 0;
 
 				::selection {
 					background: #fff;
-					color: $color_primary;
+					color: global.$color_primary;
 				}
 			}
 
