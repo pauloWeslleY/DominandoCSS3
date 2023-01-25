@@ -1,6 +1,8 @@
 @use "global" with (
-	$color_primary: #6f1ab6
+	$color_primary: #fb2576 // $color_primary: #6f1ab6
 );
+
+@use "mycolor";
 
 * {
 	box-sizing: border-box;
@@ -37,7 +39,7 @@ body {
 
 		.message {
 			flex: 1;
-			background-color: $bg;
+			background-color: mycolor.invert(global.$color_primary);
 			padding: 16px;
 			@include global.roundedBolt;
 			border-bottom-left-radius: 0;
