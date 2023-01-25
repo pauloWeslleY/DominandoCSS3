@@ -1,0 +1,12 @@
+.error {
+	background-color: rgba(255, 0, 51, 0.562);
+	border: 1px solid #ff0032;
+
+	margin: 10px;
+	padding: 10px;
+
+	&--serious {
+		@extend .error;
+		border-width: 3px;
+	}
+}
