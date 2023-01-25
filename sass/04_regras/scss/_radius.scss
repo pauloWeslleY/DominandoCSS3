@@ -1,6 +1,7 @@
 $rounded: 10px;
 
 @mixin roundedBolt {
+	@warn "This mixin is deprecated";
 	border-radius: $rounded;
 }
 
