@@ -1,1 +1,80 @@
-*{box-sizing:border-box}body{margin:0;font-family:sans-serif;color:#fb2576}#chat{display:flex;flex-direction:column;margin:20px;padding:0;list-style:none}#chat li{display:flex;margin-bottom:32px}#chat li .avatar{padding:0 16px;display:flex;align-items:flex-end}#chat li .avatar img{border-radius:50%;width:48px}#chat li .message{flex:1;background-color:#25fbaa;padding:16px;border-radius:10px;border-bottom-left-radius:0}#chat li .message strong{color:#ff4c29}#chat li .message p{font-size:14px}#chat li .message time{font-size:12px;letter-spacing:1px;opacity:.65}#chat li .menu{display:flex;align-items:center}#chat li .menu button{border:none;background:none;outline:none}#chat li .menu button img{width:16px;opacity:.5;cursor:pointer}#chat li.me{color:#f7f7e8;flex-direction:row-reverse}#chat li.me .message{background-color:#00af9c;border-bottom-left-radius:10px;border-bottom-right-radius:0}#chat li.me .message ::selection{background:#fff;color:#fb2576}#chat li.me strong{display:none}/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #fb2576;
+}
+
+#chat {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+}
+#chat li {
+  display: flex;
+  margin-bottom: 32px;
+}
+#chat li .avatar {
+  padding: 0 16px;
+  display: flex;
+  align-items: flex-end;
+}
+#chat li .avatar img {
+  border-radius: 50%;
+  width: 48px;
+}
+#chat li .message {
+  flex: 1;
+  background-color: #70b098;
+  padding: 16px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+}
+#chat li .message strong {
+  color: #ff4c29;
+}
+#chat li .message p {
+  font-size: 14px;
+}
+#chat li .message time {
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.65;
+}
+#chat li .menu {
+  display: flex;
+  align-items: center;
+}
+#chat li .menu button {
+  border: none;
+  background: none;
+  outline: none;
+}
+#chat li .menu button img {
+  width: 16px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#chat li.me {
+  color: #f7f7e8;
+  flex-direction: row-reverse;
+}
+#chat li.me .message {
+  background-color: #00af9c;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0;
+}
+#chat li.me .message ::selection {
+  background: #fff;
+  color: #fb2576;
+}
+#chat li.me strong {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -39,7 +39,7 @@ body {
 
 		.message {
 			flex: 1;
-			background-color: mycolor.invert(global.$color_primary);
+			background-color: mycolor.invert(global.$color_primary, 65);
 			padding: 16px;
 			@include global.roundedBolt;
 			border-bottom-left-radius: 0;
