@@ -32,7 +32,7 @@ body {
   flex: 1;
   background-color: #25fbaa;
   padding: 16px;
-  border-radius: 10px;
+  border-radius: 25px;
   border-bottom-left-radius: 0;
 }
 #chat li .message strong {

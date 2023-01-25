@@ -41,7 +41,7 @@ body {
 			flex: 1;
 			background-color: mycolor.invert(global.$color_primary);
 			padding: 16px;
-			@include global.roundedBolt;
+			@include global.roundedBolt(25px);
 			border-bottom-left-radius: 0;
 
 			strong {
@@ -83,7 +83,7 @@ body {
 
 			.message {
 				background-color: $bg;
-				border-bottom-left-radius: global.$rounded;
+				border-bottom-left-radius: global.$rounded-default;
 				border-bottom-right-radius: 0;
 
 				::selection {
