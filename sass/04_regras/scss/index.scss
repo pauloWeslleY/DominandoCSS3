@@ -1,12 +1,24 @@
-.error {
-	background-color: rgba(255, 0, 51, 0.562);
-	border: 1px solid #ff0032;
+@use "sass:selector";
 
-	margin: 10px;
-	padding: 10px;
+@mixin field($child) {
+	@at-root #{selector.unify(&, $child)} {
+		padding: 10px;
+		margin: 10px;
+		border: 2px solid #fb2576;
+		border-radius: 2rem;
 
-	&--serious {
-		@extend .error;
-		border-width: 3px;
+		@content;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+
+	.field {
+		@include field("input");
+		@include field("select");
+
+		color: #ff0000;
 	}
 }

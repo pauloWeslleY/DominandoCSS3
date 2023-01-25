@@ -1,11 +1,22 @@
-.error, .error--serious {
-  background-color: rgba(255, 0, 51, 0.562);
-  border: 1px solid #ff0032;
-  margin: 10px;
-  padding: 10px;
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
-.error--serious {
-  border-width: 3px;
+.wrapper .field {
+  color: #ff0000;
+}
+.wrapper input.field {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #fb2576;
+  border-radius: 2rem;
+}
+
+.wrapper select.field {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #fb2576;
+  border-radius: 2rem;
 }
 
 /*# sourceMappingURL=index.css.map */
