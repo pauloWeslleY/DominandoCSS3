@@ -1,0 +1,15 @@
+@mixin avatar($size, $circle: false) {
+	width: $size;
+	height: $size;
+
+	@if $circle {
+		border-radius: $size / 2;
+	} @else {
+		border: 2px solid #e94560;
+		// border-radius: $size / 2;
+	}
+}
+
+.photo {
+	@include avatar(150px, false);
+}
