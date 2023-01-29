@@ -1,0 +1,19 @@
+$font: "../fonts/OpenSans/";
+
+@font-face {
+	font-family: "Open";
+	font-weight: 400;
+	src: url(#{$font}OpenSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Open";
+	font-weight: 300;
+	src: url($font + "OpenSans-Light.ttf");
+}
+
+body {
+	font-family: "Open";
+	font-weight: 300;
+	font-size: 80px;
+}
